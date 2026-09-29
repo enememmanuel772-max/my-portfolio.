@@ -1,680 +1,520 @@
 <!DOCTYPE html>
-
+<!--
+  ============================================================
+  PERSONAL PORTFOLIO TEMPLATE — Liquid Glass Edition
+  ============================================================
+  HOW TO USE THIS FILE:
+  1. Search for "[" square brackets — every placeholder you
+     need to change is wrapped in them, e.g. [YOUR NAME].
+  2. Replace placeholder text with your own information.
+  3. Never claim awards, certifications or projects you do
+     not actually have — keep it honest.
+  ============================================================
+-->
 <html lang="en">
 <head>
+  <!-- =========================
+       Page setup & metadata
+       ========================= -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>[Enem Emmanuel]</title> | Computer Science Portfolio</title>
+  <meta
+    name="description"
+    content="Personal portfolio of [YOUR NAME], a Computer Science student specialising in [YOUR AREA OF INTEREST]."
+  />
 
-  <title>Enem Emmanuel Chiedozie | Computer Science Portfolio</title>
-
-<meta
- name="description"
- content="Personal portfolio of Enem Emmanuel Chiedozie, a Computer Science student at Bayelsa Medical University."
-/>
-
+  <!-- Fonts (loaded once, used by the whole site) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
   <link
     href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
     rel="stylesheet"
   />
 
+  <!-- Main stylesheet -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-
+  <!-- =========================
+       Background glow elements
+       (purely decorative — the
+       soft glowing orbs behind
+       the glass panels)
+       ========================= -->
   <div class="orb orb-1" aria-hidden="true"></div>
   <div class="orb orb-2" aria-hidden="true"></div>
   <div class="orb orb-3" aria-hidden="true"></div>
 
+  <!-- =========================
+       Navigation
+       ========================= -->
   <header class="site-header">
     <nav class="nav" aria-label="Main navigation">
+      <!-- Replace with your initials or a short logo text -->
+      <a href="#home" class="nav-logo">[YOUR NAME]</a>
 
-```
-  <a href="#home" class="nav-logo">Enem Emmanuel Chiedozie</a>
+      <!-- Desktop links (become a slide-down menu on mobile) -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Education &amp; Experience</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
 
-  <ul class="nav-links" id="navLinks">
-    <li><a href="#home" class="nav-link active">Home</a></li>
-    <li><a href="#about" class="nav-link">About</a></li>
-    <li><a href="#skills" class="nav-link">Skills</a></li>
-    <li><a href="#projects" class="nav-link">Projects</a></li>
-    <li><a href="#experience" class="nav-link">Education &amp; Experience</a></li>
-    <li><a href="#achievements" class="nav-link">Achievements</a></li>
-    <li><a href="#contact" class="nav-link">Contact</a></li>
-  </ul>
-
-  <button
-    class="nav-toggle"
-    id="navToggle"
-    aria-label="Open navigation menu"
-    aria-expanded="false"
-    aria-controls="navLinks"
-  >
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
-
-</nav>
-```
-
+      <!-- Hamburger button (mobile only) -->
+      <button
+        class="nav-toggle"
+        id="navToggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="navLinks"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
   </header>
 
   <main>
-
-```
-<section id="home" class="hero">
-
-  <div class="container hero-inner">
-
-    <div class="hero-text reveal">
-
-      <p class="hero-greeting">Hello, I'm</p>
-
-      <h1 class="hero-name">Enem Emmanuel Chiedozie</h1>
-
-      <p class="hero-role">
-        Computer Science Student &middot;
-        <span class="hero-focus">Software &amp; Web Development</span>
-      </p>
-
-      <p class="hero-intro">
-        I am a Computer Science student at Bayelsa Medical University
-        interested in software development, web development,
-        programming, problem-solving, and building practical
-        digital solutions.
-      </p>
-
-      <div class="hero-buttons">
-        <a href="#projects" class="btn btn-primary">View My Projects</a>
-        <a href="#contact" class="btn btn-ghost">Contact Me</a>
-      </div>
-
-    </div>
-
-    <div class="hero-visual reveal">
-
-      <div class="glass-card hero-card">
-
-        <div class="hero-avatar">
-          <span>EE</span>
-        </div>
-
-        <p class="hero-card-name">Enem Emmanuel Chiedozie</p>
-
-        <p class="hero-card-role">Software &amp; Web Development</p>
-
-      </div>
-
-      <div class="glass-chip chip-1">Computer Science</div>
-
-      <div class="glass-chip chip-2">
-        Bayelsa Medical University
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<section id="about" class="section">
-
-  <div class="container">
-
-    <div class="section-head reveal">
-      <p class="section-eyebrow">About Me</p>
-      <h2 class="section-title">A little about who I am</h2>
-    </div>
-
-    <div class="about-grid">
-
-      <article class="glass-card about-card reveal">
-
-        <h3>Biography</h3>
-
-        <p>
-          My name is Enem Emmanuel Chiedozie. I am a Computer Science
-          student at Bayelsa Medical University. I am interested in
-          technology, software development, web development, and
-          learning how to create useful digital solutions.
-        </p>
-
-      </article>
-
-
-      <article class="glass-card about-card reveal">
-
-        <h3>Educational Background</h3>
-
-        <p class="about-line">
-          Bayelsa Medical University
-        </p>
-
-        <p class="about-line">
-          Computer Science
-        </p>
-
-        <p class="about-line">
-          Undergraduate Student
-        </p>
-
-      </article>
-
-
-      <article class="glass-card about-card reveal">
-
-        <h3>Interests</h3>
-
-        <p>
-          My interests include software development, web development,
-          programming, problem-solving, databases, and learning
-          new technologies.
-        </p>
-
-      </article>
-
-
-      <article class="glass-card about-card reveal">
-
-        <h3>Career Goals</h3>
-
-        <p>
-          My goal is to develop strong technical skills in software
-          and web development and use technology to build practical
-          and useful solutions.
-        </p>
-
-      </article>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<section id="skills" class="section">
-
-  <div class="container">
-
-    <div class="section-head reveal">
-      <p class="section-eyebrow">Skills</p>
-      <h2 class="section-title">What I work with</h2>
-    </div>
-
-    <div class="skills-grid">
-
-      <article class="glass-card skill-card reveal">
-
-        <h3>Frontend Development</h3>
-
-        <ul class="skill-tags">
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>JavaScript</li>
-        </ul>
-
-      </article>
-
-
-      <article class="glass-card skill-card reveal">
-
-        <h3>Programming</h3>
-
-        <ul class="skill-tags">
-          <li>Python</li>
-          <li>Java</li>
-          <li>C++</li>
-        </ul>
-
-      </article>
-
-
-      <article class="glass-card skill-card reveal">
-
-        <h3>Tools</h3>
-
-        <ul class="skill-tags">
-          <li>Git</li>
-          <li>GitHub</li>
-          <li>VS Code</li>
-        </ul>
-
-      </article>
-
-
-      <article class="glass-card skill-card reveal">
-
-        <h3>Other Skills</h3>
-
-        <ul class="skill-tags">
-          <li>Problem Solving</li>
-          <li>Database Fundamentals</li>
-          <li>Responsive Design</li>
-        </ul>
-
-      </article>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<section id="projects" class="section">
-
-  <div class="container">
-
-    <div class="section-head reveal">
-      <p class="section-eyebrow">Projects</p>
-      <h2 class="section-title">Things I have built</h2>
-    </div>
-
-    <div class="projects-grid">
-
-      <article class="glass-card project-card reveal">
-
-        <p class="project-number">Project 01</p>
-
-        <h3>Personal Portfolio Website</h3>
-
-        <p class="project-desc">
-          A personal portfolio website created to showcase my
-          background, skills, academic experience, and interests
-          in software and web development.
-        </p>
-
-        <p class="project-tech">
-          Technologies: HTML &bull; CSS &bull; JavaScript
-        </p>
-
-        <div class="project-links">
-
-          <a
-            class="btn btn-small"
-            href="https://github.com/enememmanuel772-max"
-            target="_blank"
-            rel="noopener"
-          >
-            GitHub
-          </a>
-
-        </div>
-
-      </article>
-
-
-      <article class="glass-card project-card reveal">
-
-        <p class="project-number">Project 02</p>
-
-        <h3>Web Development Project</h3>
-
-        <p class="project-desc">
-          A practical web development project created while learning
-          website structure, styling, navigation, and responsive
-          design.
-        </p>
-
-        <p class="project-tech">
-          Technologies: HTML &bull; CSS
-        </p>
-
-        <div class="project-links">
-
-          <a
-            class="btn btn-small"
-            href="https://github.com/enememmanuel772-max"
-            target="_blank"
-            rel="noopener"
-          >
-            GitHub
-          </a>
-
-        </div>
-
-      </article>
-
-
-      <article class="glass-card project-card reveal">
-
-        <p class="project-number">Project 03</p>
-
-        <h3>Programming Practice</h3>
-
-        <p class="project-desc">
-          Programming practice focused on developing problem-solving
-          skills and understanding fundamental programming concepts.
-        </p>
-
-        <p class="project-tech">
-          Technologies: C++ &bull; Python &bull; Java
-        </p>
-
-        <div class="project-links">
-
-          <a
-            class="btn btn-small"
-            href="https://github.com/enememmanuel772-max"
-            target="_blank"
-            rel="noopener"
-          >
-            GitHub
-          </a>
-
-        </div>
-
-      </article>
-
-
-      <article class="glass-card project-card reveal">
-
-        <p class="project-number">Project 04</p>
-
-        <h3>Academic Development</h3>
-
-        <p class="project-desc">
-          Academic and practical work completed while developing
-          my knowledge of computer science, programming, and
-          web technologies.
-        </p>
-
-        <p class="project-tech">
-          Technologies: Programming &bull; Web Development
-        </p>
-
-        <div class="project-links">
-
-          <a
-            class="btn btn-small"
-            href="https://github.com/enememmanuel772-max"
-            target="_blank"
-            rel="noopener"
-          >
-            GitHub
-          </a>
-
-        </div>
-
-      </article>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<section id="experience" class="section">
-
-  <div class="container">
-
-    <div class="section-head reveal">
-      <p class="section-eyebrow">Education &amp; Experience</p>
-      <h2 class="section-title">My journey so far</h2>
-    </div>
-
-    <div class="timeline">
-
-      <article class="timeline-item glass-card reveal">
-
-        <p class="timeline-type">Education</p>
-
-        <h3>Bayelsa Medical University</h3>
-
-        <p class="timeline-role">
-          Computer Science
-        </p>
-
-        <p class="timeline-date">
-          Undergraduate Student
-        </p>
-
-        <p class="timeline-desc">
-          Studying Computer Science and developing knowledge in
-          programming, web development, databases, software
-          development, and computer technologies.
-        </p>
-
-      </article>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<section id="achievements" class="section">
-
-  <div class="container">
-
-    <div class="section-head reveal">
-      <p class="section-eyebrow">Achievements &amp; Certifications</p>
-      <h2 class="section-title">Learning and development</h2>
-    </div>
-
-    <div class="achievements-grid">
-
-      <article class="glass-card achievement-card reveal">
-
-        <p class="achievement-kind">Academic</p>
-
-        <h3>Computer Science Studies</h3>
-
-        <p class="achievement-desc">
-          Developing knowledge and practical skills through
-          university studies in Computer Science.
-        </p>
-
-      </article>
-
-
-      <article class="glass-card achievement-card reveal">
-
-        <p class="achievement-kind">Development</p>
-
-        <h3>Web Development Practice</h3>
-
-        <p class="achievement-desc">
-          Building practical experience with HTML, CSS,
-          JavaScript, GitHub, and VS Code.
-        </p>
-
-      </article>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<section id="contact" class="section">
-
-  <div class="container">
-
-    <div class="section-head reveal">
-      <p class="section-eyebrow">Contact</p>
-      <h2 class="section-title">Let's get in touch</h2>
-    </div>
-
-    <div class="contact-grid">
-
-      <div class="glass-card contact-card reveal">
-
-        <h3>Contact Details</h3>
-
-        <ul class="contact-list">
-
-          <li>
-
-            <span class="contact-label">Email</span>
-
-            <a href="mailto:enememmanuel772@gmail.com">
-              enememmanuel772@gmail.com
-            </a>
-
-          </li>
-
-
-          <li>
-
-            <span class="contact-label">GitHub</span>
-
-            <a
-              href="https://github.com/enememmanuel772-max"
-              target="_blank"
-              rel="noopener"
-            >
-              github.com/enememmanuel772-max
-            </a>
-
-          </li>
-
-        </ul>
-
-      </div>
-
-
-      <form
-        class="glass-card contact-form reveal"
-        id="contactForm"
-        novalidate
-      >
-
-        <h3>Send a Message</h3>
-
-        <div class="form-field">
-
-          <label for="name">Name</label>
-
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Your full name"
-            autocomplete="name"
-          />
-
-          <p class="form-error" data-error-for="name" hidden>
-            Please enter your name.
+    <!-- =========================
+         Hero Section (Home)
+         ========================= -->
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <!-- Hero text -->
+        <div class="hero-text reveal">
+          <p class="hero-greeting">Hello, I'm</p>
+          <h1 class="hero-name">[DAVID]</h1>
+          <p class="hero-role">
+            Computer Science Student &middot;
+            <span class="hero-focus">[Software/Web Development]</span>
+          </p>
+          <p class="hero-intro">
+            [SHORT INTRODUCTION — e.g. I am a Computer Science student
+            passionate about technology, problem-solving, and building
+            practical digital solutions.]
           </p>
 
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View My Projects</a>
+            <a href="#contact" class="btn btn-ghost">Contact Me</a>
+          </div>
         </div>
 
+        <!-- Hero glass visual (decorative — replace the photo placeholder) -->
+        <div class="hero-visual reveal">
+          <div class="glass-card hero-card">
+            <div class="hero-avatar">
+              <!-- Replace with <img src="assets/images/your-photo.jpg" alt="Your name" /> -->
+              <span><img src="assets/images/picture1.jpeg" alt="" srcset=""></span>
+            </div>
+            <p class="hero-card-name">[YOUR NAME]</p>
+            <p class="hero-card-role">[YOUR AREA OF INTEREST]</p>
+          </div>
 
-        <div class="form-field">
+          <!-- Small floating glass chips -->
+          <div class="glass-chip chip-1">Computer Science</div>
+          <div class="glass-chip chip-2">[YOUR UNIVERSITY]</div>
+        </div>
+      </div>
+    </section>
 
-          <label for="email">Email</label>
-
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="you@example.com"
-            autocomplete="email"
-          />
-
-          <p class="form-error" data-error-for="email" hidden>
-            Please enter a valid email address.
-          </p>
-
+    <!-- =========================
+         About Section
+         ========================= -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-eyebrow">About Me</p>
+          <h2 class="section-title">A little about who I am</h2>
         </div>
 
+        <div class="about-grid">
+          <!-- Biography -->
+          <article class="glass-card about-card reveal">
+            <h3>Biography</h3>
+            <p>
+              [WRITE A SHORT BIOGRAPHY HERE — who you are, what you study,
+              and what motivates you in computing. 2–4 sentences is plenty.]
+            </p>
+          </article>
+bbb
+          <!-- Education snapshot -->
+          <article class="glass-card about-card reveal">
+            <h3>Educational Background</h3>
+            <p class="about-line">[YOUR UNIVERSITY / INSTITUTION]</p>
+            <p class="about-line">[YOUR DEGREE / PROGRAM]</p>
+            <p class="about-line">[YOUR GRADUATION YEAR]</p>
+          </article>
 
-        <div class="form-field">
+          <!-- Interests -->
+          <article class="glass-card about-card reveal">
+            <h3>Interests</h3>
+            <p>
+              [YOUR INTERESTS — e.g. the technologies, topics or hobbies
+              you enjoy outside of coursework.]
+            </p>
+          </article>
 
-          <label for="message">Message</label>
+          <!-- Career goals -->
+          <article class="glass-card about-card reveal">
+            <h3>Career Goals</h3>
+            <p>
+              [DESCRIBE YOUR CAREER GOALS HERE — the kind of role,
+              industry or impact you are working towards.]
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-          <textarea
-            id="message"
-            name="message"
-            rows="5"
-            placeholder="What would you like to say?"
-          ></textarea>
-
-          <p class="form-error" data-error-for="message" hidden>
-            Please enter a short message.
-          </p>
-
+    <!-- =========================
+         Skills Section
+         (edit the tags directly —
+         no percentages, just clean
+         skill chips)
+         ========================= -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-eyebrow">Skills</p>
+          <h2 class="section-title">What I work with</h2>
         </div>
 
+        <div class="skills-grid">
+          <article class="glass-card skill-card reveal">
+            <h3>Frontend Development</h3>
+            <ul class="skill-tags">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+            </ul>
+          </article>
 
-        <button type="submit" class="btn btn-primary btn-full">
-          Send Message
-        </button>
+          <article class="glass-card skill-card reveal">
+            <h3>Programming</h3>
+            <ul class="skill-tags">
+              <li>Python</li>
+              <li>Java</li>
+              <li>C++</li>
+            </ul>
+          </article>
 
-        <p class="form-note" id="formNote" hidden>
-          Thanks for your message.
-        </p>
+          <article class="glass-card skill-card reveal">
+            <h3>Tools</h3>
+            <ul class="skill-tags">
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>VS Code</li>
+            </ul>
+          </article>
 
-      </form>
+          <article class="glass-card skill-card reveal">
+            <h3>Other Skills</h3>
+            <ul class="skill-tags">
+              <li>Problem Solving</li>
+              <li>Database Fundamentals</li>
+              <li>Responsive Design</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
 
-    </div>
+    <!-- =========================
+         Projects Section
+         (add or remove whole
+         <article> blocks as needed)
+         ========================= -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-eyebrow">Projects</p>
+          <h2 class="section-title">Things I have built</h2>
+        </div>
 
-  </div>
+        <div class="projects-grid">
+          <!-- Project 01 -->
+          <article class="glass-card project-card reveal">
+            <p class="project-number">Project 01</p>
+            <h3>[PROJECT TITLE]</h3>
+            <p class="project-desc">
+              [WRITE A SHORT DESCRIPTION OF YOUR PROJECT HERE — what it does
+              and what problem it solves.]
+            </p>
+            <p class="project-tech">Technologies: HTML &bull; CSS &bull; JavaScript</p>
+            <div class="project-links">
+              <!-- Replace with your real repository URL -->
+              <a class="btn btn-small" href="https://github.com/yourusername/project-name" target="_blank" rel="noopener">GitHub</a>
+              <!-- Replace with your real demo URL, or delete this button -->
+              <a class="btn btn-small btn-primary" href="https://your-live-demo-url.com" target="_blank" rel="noopener">Live Demo</a>
+            </div>
+          </article>
 
-</section>
-```
+          <!-- Project 02 -->
+          <article class="glass-card project-card reveal">
+            <p class="project-number">Project 02</p>
+            <h3>[PROJECT TITLE]</h3>
+            <p class="project-desc">
+              [WRITE A SHORT DESCRIPTION HERE — what it does and what you
+              learned building it.]
+            </p>
+            <p class="project-tech">Technologies: Python &bull; Database &bull; API</p>
+            <div class="project-links">
+              <a class="btn btn-small" href="https://github.com/yourusername/project-name" target="_blank" rel="noopener">GitHub</a>
+              <a class="btn btn-small btn-primary" href="https://your-live-demo-url.com" target="_blank" rel="noopener">Live Demo</a>
+            </div>
+          </article>
 
+          <!-- Project 03 -->
+          <article class="glass-card project-card reveal">
+            <p class="project-number">Project 03</p>
+            <h3>[PROJECT TITLE]</h3>
+            <p class="project-desc">
+              [WRITE A SHORT DESCRIPTION HERE — focus on your contribution
+              and the outcome.]
+            </p>
+            <p class="project-tech">Technologies: [TECHNOLOGIES USED]</p>
+            <div class="project-links">
+              <a class="btn btn-small" href="https://github.com/yourusername/project-name" target="_blank" rel="noopener">GitHub</a>
+              <a class="btn btn-small btn-primary" href="https://your-live-demo-url.com" target="_blank" rel="noopener">Live Demo</a>
+            </div>
+          </article>
+
+          <!-- Project 04 — OPTIONAL: delete this card if you only have three -->
+          <article class="glass-card project-card reveal">
+            <p class="project-number">Project 04</p>
+            <h3>[OPTIONAL PROJECT]</h3>
+            <p class="project-desc">
+              [WRITE A SHORT DESCRIPTION HERE — or delete this whole card
+              if you don't need a fourth project.]
+            </p>
+            <p class="project-tech">Technologies: [TECHNOLOGIES USED]</p>
+            <div class="project-links">
+              <a class="btn btn-small" href="https://github.com/yourusername/project-name" target="_blank" rel="noopener">GitHub</a>
+              <a class="btn btn-small btn-primary" href="https://your-live-demo-url.com" target="_blank" rel="noopener">Live Demo</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         Education & Experience
+         (vertical timeline)
+         ========================= -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-eyebrow">Education &amp; Experience</p>
+          <h2 class="section-title">My journey so far</h2>
+        </div>
+
+        <div class="timeline">
+          <!-- Timeline entry: education -->
+          <article class="timeline-item glass-card reveal">
+            <p class="timeline-type">Education</p>
+            <h3>[UNIVERSITY / INSTITUTION]</h3>
+            <p class="timeline-role">[DEGREE / PROGRAM]</p>
+            <p class="timeline-date">[START YEAR – EXPECTED GRADUATION YEAR]</p>
+            <p class="timeline-desc">
+              [ADD EDUCATION DETAILS HERE — relevant coursework, projects
+              or societies you took part in.]
+            </p>
+          </article>
+
+          <!-- Timeline entry: internship / work -->
+          <article class="timeline-item glass-card reveal">
+            <p class="timeline-type">Experience</p>
+            <h3>[COMPANY / ORGANIZATION]</h3>
+            <p class="timeline-role">[POSITION / INTERNSHIP TITLE]</p>
+            <p class="timeline-date">[DATE]</p>
+            <p class="timeline-desc">
+              [DESCRIBE YOUR EXPERIENCE HERE — what you worked on and
+              what you contributed.]
+            </p>
+          </article>
+
+          <!-- Timeline entry: OPTIONAL extra experience — delete if unused -->
+          <article class="timeline-item glass-card reveal">
+            <p class="timeline-type">Experience</p>
+            <h3>[COMPANY / ORGANIZATION]</h3>
+            <p class="timeline-role">[POSITION / ROLE]</p>
+            <p class="timeline-date">[DATE]</p>
+            <p class="timeline-desc">
+              [DESCRIBE THIS EXPERIENCE HERE — volunteering, training,
+              club leadership, tutoring, etc.]
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!--
+        ACHIEVEMENTS & CERTIFICATIONS
+
+        Replace the placeholder information below
+        with your own awards, achievements,
+        certificates, competitions, workshops, etc.
+        DO NOT list anything you have not actually
+        earned — this section is meant to stay
+        honest and easy to edit.
+    -->
+    <section id="achievements" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-eyebrow">Achievements &amp; Certifications</p>
+          <h2 class="section-title">Recognition along the way</h2>
+        </div>
+
+        <div class="achievements-grid">
+          <!-- Achievement 01 -->
+          <article class="glass-card achievement-card reveal">
+            <p class="achievement-kind">Achievement</p>
+            <h3>[ACHIEVEMENT / AWARD NAME]</h3>
+            <p class="achievement-desc">[SHORT DESCRIPTION]</p>
+            <p class="achievement-year">[YEAR]</p>
+          </article>
+
+          <!-- Certification 01 -->
+          <article class="glass-card achievement-card reveal">
+            <p class="achievement-kind">Certification</p>
+            <h3>[CERTIFICATION NAME]</h3>
+            <p class="achievement-desc">Issued by: [ORGANIZATION]</p>
+            <p class="achievement-year">[YEAR]</p>
+          </article>
+
+          <!-- Certification 02 -->
+          <article class="glass-card achievement-card reveal">
+            <p class="achievement-kind">Certification</p>
+            <h3>[CERTIFICATION NAME]</h3>
+            <p class="achievement-desc">Issued by: [ORGANIZATION]</p>
+            <p class="achievement-year">[YEAR]</p>
+          </article>
+
+          <!-- Achievement 02 -->
+          <article class="glass-card achievement-card reveal">
+            <p class="achievement-kind">Achievement</p>
+            <h3>[ACHIEVEMENT / AWARD NAME]</h3>
+            <p class="achievement-desc">[SHORT DESCRIPTION]</p>
+            <p class="achievement-year">[YEAR]</p>
+          </article>
+
+          <!-- Certification 03 — OPTIONAL -->
+          <article class="glass-card achievement-card reveal">
+            <p class="achievement-kind">Certification</p>
+            <h3>[CERTIFICATION NAME]</h3>
+            <p class="achievement-desc">Issued by: [ORGANIZATION]</p>
+            <p class="achievement-year">[YEAR]</p>
+          </article>
+
+          <!-- Achievement 03 — OPTIONAL -->
+          <article class="glass-card achievement-card reveal">
+            <p class="achievement-kind">Achievement</p>
+            <h3>[ACHIEVEMENT / AWARD NAME]</h3>
+            <p class="achievement-desc">[SHORT DESCRIPTION]</p>
+            <p class="achievement-year">[YEAR]</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         Contact Section
+         (static site — the form
+         validates input in the
+         browser only)
+         ========================= -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-eyebrow">Contact</p>
+          <h2 class="section-title">Let's get in touch</h2>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Direct contact details -->
+          <div class="glass-card contact-card reveal">
+            <h3>Contact Details</h3>
+            <ul class="contact-list">
+              <li>
+                <span class="contact-label">Email</span>
+                <!-- Replace with your real email address -->
+                <a href="mailto:your.email@example.com">[YOUR EMAIL]</a>
+              </li>
+              <li>
+                <span class="contact-label">LinkedIn</span>
+                <!-- Replace with your real LinkedIn profile URL -->
+                <a href="https://www.linkedin.com/in/your-username" target="_blank" rel="noopener">[YOUR LINKEDIN URL]</a>
+              </li>
+              <li>
+                <span class="contact-label">GitHub</span>
+                <!-- Replace with your real GitHub profile URL -->
+                <a href="https://github.com/yourusername" target="_blank" rel="noopener">[YOUR GITHUB URL]</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact form (front-end validation only) -->
+          <form class="glass-card contact-form reveal" id="contactForm" novalidate>
+            <h3>Send a Message</h3>
+
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" autocomplete="name" />
+              <p class="form-error" data-error-for="name" hidden>Please enter your name.</p>
+            </div>
+
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" />
+              <p class="form-error" data-error-for="email" hidden>Please enter a valid email address.</p>
+            </div>
+
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="What would you like to say?"></textarea>
+              <p class="form-error" data-error-for="message" hidden>Please enter a short message.</p>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+
+            <!-- Shown after a successful (client-side only) submission -->
+            <p class="form-note" id="formNote" hidden>
+              Thanks! This is a static website, so a real message needs an
+              external form service (e.g. Formspree) or a mail client — see
+              the README for how to connect one.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
 
+  <!-- =========================
+       Footer
+       ========================= -->
   <footer class="site-footer">
-
-```
-<div class="container footer-inner">
-
-  <p>
-    &copy; 2026 Enem Emmanuel Chiedozie &middot;
-    Computer Science Portfolio
-  </p>
-
-  <ul class="footer-links">
-
-    <li>
-      <a
-        href="https://github.com/enememmanuel772-max"
-        target="_blank"
-        rel="noopener"
-      >
-        GitHub
-      </a>
-    </li>
-
-    <li>
-      <a href="mailto:enememmanuel772@gmail.com">
-        Email
-      </a>
-    </li>
-
-  </ul>
-
-</div>
-```
-
+    <div class="container footer-inner">
+      <p>&copy; 2026 [YOUR NAME] &middot; Computer Science Portfolio</p>
+      <ul class="footer-links">
+        <li><a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/your-username" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="mailto:your.email@example.com">Email</a></li>
+      </ul>
+    </div>
   </footer>
 
-<button
-id="backToTop"
-class="back-to-top"
-aria-label="Back to top"
-hidden
+  <!-- Back-to-top button (appears after scrolling) -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top" hidden>&uarr;</button>
 
->
-
-```
-&uarr;
-```
-
-  </button>
-
+  <!-- Site JavaScript -->
   <script src="js/script.js"></script>
-
 </body>
 </html>
