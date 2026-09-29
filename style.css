@@ -1,19 +1,7 @@
-/* =========================================================
-   PERSONAL PORTFOLIO — Liquid Glass Stylesheet
-   =========================================================
-   All major design values live in the variables below.
-   Change :root values to re-theme the whole site.
-   ========================================================= */
-
-/* =========================
-   Design variables
-   ========================= */
 :root {
-  /* Accent — change this one value to re-color the site */
   --accent-color: #7c8cff;
   --accent-color-2: #43d9c9;
 
-  /* Surfaces & text */
   --bg: #070a14;
   --glass-bg: rgba(255, 255, 255, 0.05);
   --glass-bg-strong: rgba(255, 255, 255, 0.09);
@@ -22,16 +10,12 @@
   --text: #eef1f8;
   --muted: #9aa3b8;
 
-  /* Shape & depth */
   --radius: 20px;
   --radius-small: 12px;
   --shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
   --glow: 0 0 40px rgba(124, 140, 255, 0.18);
 }
 
-/* =========================
-   Base / reset
-   ========================= */
 * {
   margin: 0;
   padding: 0;
@@ -40,7 +24,6 @@
 
 html {
   scroll-behavior: smooth;
-  /* Keeps section titles clear of the fixed nav when scrolling */
   scroll-padding-top: 96px;
 }
 
@@ -81,9 +64,6 @@ img {
   margin: 0 auto;
 }
 
-/* =========================
-   Background glow orbs
-   ========================= */
 .orb {
   position: fixed;
   border-radius: 50%;
@@ -125,9 +105,6 @@ img {
   50% { transform: translate(30px, -25px); }
 }
 
-/* =========================
-   Glass surfaces
-   ========================= */
 .glass-card {
   background: var(--glass-bg);
   border: 1px solid var(--border);
@@ -151,9 +128,6 @@ img {
   animation: float 10s ease-in-out infinite;
 }
 
-/* =========================
-   Navigation
-   ========================= */
 .site-header {
   position: fixed;
   top: 16px;
@@ -215,7 +189,6 @@ img {
   box-shadow: inset 0 0 0 1px var(--border);
 }
 
-/* Hamburger button — hidden on desktop */
 .nav-toggle {
   display: none;
   flex-direction: column;
@@ -235,14 +208,10 @@ img {
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* Hamburger becomes an X when the menu is open */
 .nav-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
 .nav-toggle.open span:nth-child(2) { opacity: 0; }
 .nav-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-/* =========================
-   Hero Section
-   ========================= */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -298,7 +267,6 @@ img {
   gap: 14px;
 }
 
-/* Hero glass visual */
 .hero-visual {
   position: relative;
   display: flex;
@@ -339,9 +307,6 @@ img {
 .chip-1 { top: -18px; left: 4%; animation-delay: -3s; }
 .chip-2 { bottom: -14px; right: 2%; animation-delay: -7s; }
 
-/* =========================
-   Buttons
-   ========================= */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -385,9 +350,6 @@ img {
   width: 100%;
 }
 
-/* =========================
-   Sections (shared)
-   ========================= */
 .section {
   padding: 90px 0;
 }
@@ -409,9 +371,6 @@ img {
   font-size: clamp(1.7rem, 3.4vw, 2.3rem);
 }
 
-/* =========================
-   About cards
-   ========================= */
 .about-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -431,9 +390,6 @@ img {
   padding: 4px 0;
 }
 
-/* =========================
-   Skills cards
-   ========================= */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -465,9 +421,6 @@ img {
   color: var(--accent-color);
 }
 
-/* =========================
-   Project cards
-   ========================= */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -505,9 +458,6 @@ img {
   flex-wrap: wrap;
 }
 
-/* =========================
-   Education & Experience timeline
-   ========================= */
 .timeline {
   position: relative;
   max-width: 720px;
@@ -515,7 +465,6 @@ img {
   padding-left: 34px;
 }
 
-/* The vertical line */
 .timeline::before {
   content: "";
   position: absolute;
@@ -532,7 +481,6 @@ img {
   margin-bottom: 26px;
 }
 
-/* Dot on the line for each entry */
 .timeline-item::before {
   content: "";
   position: absolute;
@@ -575,9 +523,6 @@ img {
   color: var(--muted);
 }
 
-/* =========================
-   Achievements & Certifications
-   ========================= */
 .achievements-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -609,9 +554,6 @@ img {
   color: var(--muted);
 }
 
-/* =========================
-   Contact section
-   ========================= */
 .contact-grid {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
@@ -651,7 +593,6 @@ img {
   text-decoration: underline;
 }
 
-/* Contact form fields */
 .form-field {
   margin-bottom: 16px;
 }
@@ -700,9 +641,6 @@ img {
   color: var(--muted);
 }
 
-/* =========================
-   Footer
-   ========================= */
 .site-footer {
   border-top: 1px solid var(--border);
   padding: 34px 0;
@@ -730,9 +668,6 @@ img {
   color: var(--accent-color);
 }
 
-/* =========================
-   Back-to-top button
-   ========================= */
 .back-to-top {
   position: fixed;
   right: 22px;
@@ -756,12 +691,6 @@ img {
   box-shadow: var(--glow);
 }
 
-/* =========================
-   Scroll reveal animation
-   (elements start hidden and
-   fade in when scrolled into
-   view — see js/script.js)
-   ========================= */
 .reveal {
   opacity: 0;
   transform: translateY(24px);
@@ -773,24 +702,17 @@ img {
   transform: translateY(0);
 }
 
-/* Respect users who prefer no animation */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .reveal { opacity: 1; transform: none; transition: none; }
   .orb, .glass-chip, .hero-card { animation: none; }
 }
 
-/* =========================
-   Responsive design
-   ========================= */
-
-/* Laptop and below */
 @media (max-width: 1024px) {
   .nav-link { padding: 8px 9px; font-size: 0.84rem; }
   .achievements-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
-/* Tablet */
 @media (max-width: 768px) {
   .hero { padding-top: 120px; }
 
@@ -809,7 +731,6 @@ img {
     grid-template-columns: 1fr;
   }
 
-  /* Mobile navigation */
   .nav-toggle { display: flex; }
 
   .nav-links {
@@ -828,7 +749,6 @@ img {
     -webkit-backdrop-filter: blur(20px);
     box-shadow: var(--shadow);
 
-    /* Hidden by default, slides in when .open is added */
     opacity: 0;
     transform: translateY(-8px);
     visibility: hidden;
@@ -844,7 +764,6 @@ img {
   .nav-link { display: block; }
 }
 
-/* Mobile — down to 320px */
 @media (max-width: 480px) {
   .section { padding: 64px 0; }
 
