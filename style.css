@@ -1689,3 +1689,14 @@ img {
       center;
   }
 }
+
+.profile-picture {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--accent-color);
+}
